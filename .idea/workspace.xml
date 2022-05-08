@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="891b441b-e5fa-45c0-a2a7-15f6238ec1ac" name="Default Changelist" comment="" />
+    <list default="true" id="891b441b-e5fa-45c0-a2a7-15f6238ec1ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nuc/Daily.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nuc/Exam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Daily.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Exam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nuc/DailyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nuc/DailyMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nuc/DailyReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nuc/DailyReducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nuc/ExamMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nuc/ExamMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nuc/ExamReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nuc/ExamReducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nuc/MRDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nuc/MRDriver.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +32,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -25,19 +45,22 @@
     </option>
   </component>
   <component name="ProjectId" id="28pS9bF6lh0TwSQMoAQrcrZpim2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/nuc" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="com.alibabacloud.intellij.toolkit-intellij.code" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\作业\毕业设计\MR\src\main\java\com" />
       <recent name="D:\作业\毕业设计\MR\src\main\java\com\nuc" />
+      <recent name="D:\作业\毕业设计\MR\src\main\resources" />
+      <recent name="D:\作业\毕业设计\MR\src\main\java\com" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -51,6 +74,26 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="MRDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nuc.MRDriver" />
+      <module name="MR" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nuc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MRDriver" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SshConsoleOptionsProvider">
     <option name="myEncoding" value="UTF-8" />
@@ -66,11 +109,26 @@
       <option name="presentableId" value="Default" />
       <updated>1651911883487</updated>
       <workItem from="1651911885738" duration="5817000" />
-      <workItem from="1651921459239" duration="259000" />
+      <workItem from="1651921459239" duration="2946000" />
+      <workItem from="1651979435392" duration="5474000" />
+      <workItem from="1652010603498" duration="741000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,8 +1,5 @@
 package com.nuc;
 
-import com.entity.Daily;
-import com.entity.Exam;
-import com.sun.org.apache.xml.internal.resolver.readers.ExtendedXMLCatalogReader;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
@@ -31,7 +28,7 @@ public class MRDriver {
         Job job = Job.getInstance(conf);
 
         //2 关联Driver类
-        job.setJarByClass(CsvSplitDriver.class);
+        job.setJarByClass(MRDriver.class);
         int sz = args[1].split("/").length;
         if ("daily".equals(args[1].split("/")[sz - 1])) {
             //3 关联Mapper和Reducer类
@@ -59,7 +56,7 @@ public class MRDriver {
             job.setOutputValueClass(Exam.class);
         }
         //6	设置输入输出路径
-        FileInputFormat.setInputPaths(job, new Path[]{new Path(args[0])});
+        FileInputFormat.setInputPaths(job, new Path(args[0]));
         FileSystem fs = FileSystem.get(new URI("hdfs://180.76.243.209:9000"), conf, "root");
 
         Path pathout = new Path(args[1]);
