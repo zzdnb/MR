@@ -144,18 +144,7 @@ public class Daily implements Serializable, Writable {
 
     @Override
     public String toString() {
-        return "Daily{" +
-                "id='" + id + '\'' +
-                ", studentNo='" + studentNo + '\'' +
-                ", classNo='" + classNo + '\'' +
-                ", time='" + time + '\'' +
-                ", motto='" + motto + '\'' +
-                ", workContent='" + workContent + '\'' +
-                ", completion='" + completion + '\'' +
-                ", note='" + note + '\'' +
-                ", addTime='" + addTime + '\'' +
-                ", isDaily='" + isDaily + '\'' +
-                '}';
+        return id + ',' + studentNo + ',' + classNo + ',' + time + ',' + motto + ',' + workContent + ',' + completion + ',' + note + ',' + addTime + ',' + isDaily;
     }
 
     @Override
@@ -172,7 +161,6 @@ public class Daily implements Serializable, Writable {
         dataOutput.writeUTF(addTime);
         dataOutput.writeUTF(isDaily);
     }
-
 
 
     @Override

@@ -138,18 +138,8 @@ public class Exam implements Serializable, Writable {
 
     @Override
     public String toString() {
-        return "Exam{" +
-                "paperNo='" + paperNo + '\'' +
-                ", studentNo='" + studentNo + '\'' +
-                ", subjectiveScore='" + subjectiveScore + '\'' +
-                ", objectiveScore='" + objectiveScore + '\'' +
-                ", score='" + score + '\'' +
-                ", isRead='" + isRead + '\'' +
-                ", isSubmit='" + isSubmit + '\'' +
-                ", isEnter='" + isEnter + '\'' +
-                ", subjectiveDetails='" + subjectiveDetails + '\'' +
-                ", objectiveDetails='" + objectiveDetails + '\'' +
-                '}';
+        return paperNo + ',' + studentNo + ',' + subjectiveScore + ',' + objectiveScore + ',' + score + ','
+                + isRead + ',' + isSubmit + ',' + isEnter + ',' + subjectiveDetails + ',' + objectiveDetails;
     }
 
     @Override
