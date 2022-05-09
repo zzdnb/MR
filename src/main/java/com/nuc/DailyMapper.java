@@ -18,6 +18,7 @@ public class DailyMapper extends Mapper<LongWritable, Text, Text, Daily> {
     private Text outK = new Text();
     private Daily outV = new Daily();
 
+
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 
@@ -29,7 +30,13 @@ public class DailyMapper extends Mapper<LongWritable, Text, Text, Daily> {
         //班级编号
         String classNo = fields[3];
         //所属日期
-        String time = fields[4];
+        String[] tmp = fields[4].split(" ");
+        if(tmp[0].split("/").length<3){
+            return;
+        }
+//        String time = tmp[0].split("/")[2]+'-'+tmp[0].split("/")[1]+'-'+tmp[0].split("/")[0]+" "+tmp[1];
+        String time = tmp[0].split("/")[2] + '-' + (tmp[0].split("/")[1].length() > 1 ? tmp[0].split("/")[1] : "0" + tmp[0].split("/")[1]) + '-' + (tmp[0].split("/")[0].length() > 1 ? tmp[0].split("/")[0] : "0" + tmp[0].split("/")[0]) + " " + tmp[1];
+
         //座右铭
         String motto = fields[5];
         //工作内容
@@ -39,7 +46,13 @@ public class DailyMapper extends Mapper<LongWritable, Text, Text, Daily> {
         // 备注
         String note = fields[8];
         //日报添加时间
-        String addTime = fields[9];
+
+        tmp = fields[9].split(" ");
+        if(tmp[0].split("/").length<3){
+            return;
+        }
+//        String addTime = tmp[0].split("/")[2]+'-'+tmp[0].split("/")[1]+'-'+tmp[0].split("/")[0]+" "+tmp[1];
+        String addTime = tmp[0].split("/")[2] + '-' + (tmp[0].split("/")[1].length() > 1 ? tmp[0].split("/")[1] : "0" + tmp[0].split("/")[1]) + '-' + (tmp[0].split("/")[0].length() > 1 ? tmp[0].split("/")[0] : "0" + tmp[0].split("/")[0]) + " " + tmp[1];
         //日报/周报 0/1
         String isDaily = fields[10];
 
